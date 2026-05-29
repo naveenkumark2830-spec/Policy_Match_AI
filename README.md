@@ -3,7 +3,7 @@
 ## Multilingual AI Financial Inclusion Assistant
 ### A Conversational AI System for Financial Education & Government Scheme Recommendation
 
-**<<Naveen Kumar K>> · <<Dharnesh>> · <<Prithvish Wiliam >>**
+**Naveen Kumar K, MSc BDA, 252BDA25· Dharnesh, MSc BDA, 252BDA27· Prithvish William, MSc BDA, 252BDA18**
 
 ---
 
