@@ -18,7 +18,7 @@
 
 # Abstract
 
-GovSchemeAI is an AI-powered conversational platform designed to simplify access to government welfare schemes for Indian citizens.
+Policy_Match_AI is an AI-powered conversational platform designed to simplify access to government welfare schemes for Indian citizens.
 
 The system combines:
 
