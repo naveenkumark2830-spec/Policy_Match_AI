@@ -90,6 +90,7 @@ class OptimizedRAGEngine:
             if idx < len(self.df):
                 scheme_text = self.scheme_dict.get(idx, "")
                 results.append({
+                    'id': int(idx),
                     'rank': rank,
                     'scheme': scheme_text[:120] + "..." if len(scheme_text) > 120 else scheme_text,
                     'full_scheme': scheme_text,
@@ -123,6 +124,7 @@ class OptimizedRAGEngine:
         results = []
         for rank, (idx, scheme_text, score) in enumerate(scores[:top_k], 1):
             results.append({
+                'id': int(idx),
                 'rank': rank,
                 'scheme': scheme_text[:120] + "..." if len(scheme_text) > 120 else scheme_text,
                 'full_scheme': scheme_text,
@@ -150,11 +152,14 @@ class OptimizedRAGEngine:
         
         if profile.get('occupation'):
             occupation_keywords = {
-                'student': 'education scholarship loan',
+                'student': 'education scholarship student',
+                'widow': 'widow pension women welfare',
+                'farmer': 'farmer agriculture subsidy financial assistance',
+                'unemployed': 'job training unemployment skill development',
                 'employed': 'salary employment provident fund savings',
                 'self-employed': 'business loan entrepreneur MSME',
                 'retired': 'pension retirement savings',
-            }
+}
             keyword = occupation_keywords.get(profile['occupation'], '')
             if keyword:
                 query_parts.append(keyword)
